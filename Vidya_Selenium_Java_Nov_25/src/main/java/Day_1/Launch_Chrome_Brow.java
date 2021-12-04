@@ -12,9 +12,6 @@ public class Launch_Chrome_Brow {
 		//WebDriver d = new ChromeDriver();
 		ChromeDriver d = new ChromeDriver();
 		d.get("https://www.amazon.in/");
-
-
-		
 	}
 
 }
