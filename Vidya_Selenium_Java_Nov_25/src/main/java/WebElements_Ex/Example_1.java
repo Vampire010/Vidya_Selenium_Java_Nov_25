@@ -1,6 +1,7 @@
 package WebElements_Ex;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,6 +29,12 @@ public class Example_1 {
 		Point Text_Loc = font_Det.getLocation();
 		System.out.println("Text_Loc " + Text_Loc);
 		
+		WebElement INP_TXTBX = d.findElement(By.xpath("//*[@id=\"loginPanel\"]/form/div[1]/input"));
+		Dimension Text_inpbx = INP_TXTBX.getSize();
+		System.out.println("Text_inpbx " + Text_inpbx);
+		
+		String Tag_Name = INP_TXTBX.getTagName();
+		System.out.println("Tag_Name " + Tag_Name);
 		
 	}
 
